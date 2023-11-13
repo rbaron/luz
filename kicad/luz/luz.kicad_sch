@@ -2566,7 +2566,6 @@
   (no_connect (at 114.935 62.865) (uuid 6ca61701-6f9d-431a-affb-f3eec0e832d8))
   (no_connect (at 262.89 146.05) (uuid 6de5c847-ce33-4d5d-9cbd-32bf0ff5d57c))
   (no_connect (at 114.935 95.885) (uuid 79632cf5-2e88-4db0-9b1a-0c0d7dd9da45))
-  (no_connect (at 221.615 49.53) (uuid 7f9c95ca-e01b-4f29-a486-0eaea4f3bd57))
   (no_connect (at 114.935 67.945) (uuid 8cd0b33f-dabc-4646-845b-7f8b1f7893a6))
   (no_connect (at 114.935 73.025) (uuid 963d3694-d715-46a7-b9b1-774d4553a3d4))
   (no_connect (at 48.895 75.565) (uuid a5abc677-28e7-49a0-824e-cff8d86baeb9))
@@ -3740,6 +3739,11 @@
   (wire (pts (xy 222.885 148.59) (xy 222.885 150.495))
     (stroke (width 0) (type default))
     (uuid ffcf43f9-cb19-46d9-bdbe-cced981b6a0b)
+  )
+
+  (text "Can only handle +16V\n(+20 Absolute Max)." (at 101.6 137.16 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 0f487196-6b93-4e71-b089-ba049f7ac327)
   )
 
   (global_label "USBD-" (shape input) (at 266.7 135.89 0) (fields_autoplaced)
@@ -5325,6 +5329,31 @@
       (project "luz"
         (path "/5e451c1d-8668-4fa5-842c-f16216d1b170"
           (reference "#PWR026") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 216.535 49.53 0) (mirror y) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 525f517a-97b2-4430-985a-d3ee24cc22a9)
+    (property "Reference" "#PWR048" (at 216.535 55.88 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 213.36 52.705 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 216.535 49.53 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 216.535 49.53 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 4a7eb094-1d67-478d-bcf5-3a8a4e6c6aff))
+    (instances
+      (project "luz"
+        (path "/5e451c1d-8668-4fa5-842c-f16216d1b170"
+          (reference "#PWR048") (unit 1)
         )
       )
     )
@@ -7734,6 +7763,35 @@
       (project "luz"
         (path "/5e451c1d-8668-4fa5-842c-f16216d1b170"
           (reference "R8") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:R_Small") (at 219.075 49.53 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid f4e888a9-c414-4b73-8ea2-888947d95827)
+    (property "Reference" "R16" (at 220.98 46.99 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Value" "10k" (at 220.98 44.45 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 219.075 49.53 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 219.075 49.53 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC" "C25744" (at 219.075 49.53 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 22c741d7-6685-4f02-b119-78b7df1cc813))
+    (pin "2" (uuid 9b3c0567-3af9-4866-a349-8cad7d132742))
+    (instances
+      (project "luz"
+        (path "/5e451c1d-8668-4fa5-842c-f16216d1b170"
+          (reference "R16") (unit 1)
         )
       )
     )
