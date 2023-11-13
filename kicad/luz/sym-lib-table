@@ -1,0 +1,10 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "W25Q16JVSSIQ")(type "KiCad")(uri "${KIPRJMOD}/lib/snapeda/W25Q16JVSSIQ.kicad_sym")(options "")(descr ""))
+  (lib (name "B3U-1000P")(type "KiCad")(uri "${KIPRJMOD}/lib/snapeda/B3U-1000P.kicad_sym")(options "")(descr ""))
+  (lib (name "ANT3216LL00R2400A")(type "KiCad")(uri "${KIPRJMOD}/lib/snapeda/ANT3216LL00R2400A.kicad_sym")(options "")(descr ""))
+  (lib (name "U261-241N-4BS60")(type "KiCad")(uri "${KIPRJMOD}/lib/snapeda/U261-241N-4BS60.kicad_sym")(options "")(descr ""))
+  (lib (name "SSM3J338R_LF")(type "KiCad")(uri "${KIPRJMOD}/lib/snapeda/SSM3J338R_LF.kicad_sym")(options "")(descr ""))
+  (lib (name "AOD413A")(type "KiCad")(uri "${KIPRJMOD}/lib/snapeda/AOD413A.kicad_sym")(options "")(descr ""))
+  (lib (name "ESDA25W")(type "KiCad")(uri "${KIPRJMOD}/lib/snapeda/ESDA25W.kicad_sym")(options "")(descr ""))
+)
