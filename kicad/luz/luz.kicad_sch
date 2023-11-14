@@ -6305,7 +6305,7 @@
   )
 
   (symbol (lib_id "Connector:TestPoint") (at 164.465 120.015 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 94323edb-0114-497d-8ed9-50806a0f84fb)
     (property "Reference" "TP7" (at 170.18 119.38 90)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -6767,7 +6767,7 @@
   )
 
   (symbol (lib_id "Connector:TestPoint") (at 164.465 125.095 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b01d7e07-5c95-42da-99ba-9d9675d940ae)
     (property "Reference" "TP8" (at 170.18 124.46 90)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -7822,7 +7822,7 @@
   )
 
   (symbol (lib_id "Connector:Screw_Terminal_01x05") (at 170.815 81.28 90) (unit 1)
-    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
     (uuid f62db94e-bc14-4bf9-a87d-a9362b8139e5)
     (property "Reference" "J3" (at 170.815 76.2 90)
       (effects (font (size 1.27 1.27)))
