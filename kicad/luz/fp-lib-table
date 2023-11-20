@@ -1,4 +1,6 @@
 (fp_lib_table
   (version 7)
   (lib (name "snapeda")(type "KiCad")(uri "${KIPRJMOD}/lib/snapeda")(options "")(descr ""))
+  (lib (name "digikey")(type "KiCad")(uri "${KIPRJMOD}/lib/digikey")(options "")(descr ""))
+  (lib (name "footprint")(type "KiCad")(uri "${KIPRJMOD}/lib/jlcpcb/footprint")(options "")(descr ""))
 )
