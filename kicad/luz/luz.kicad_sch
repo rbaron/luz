@@ -3646,7 +3646,7 @@
     (property "Reference" "L1" (at 85.725 149.86 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "SWPA4030S470MT" (at 85.725 152.4 0)
+    (property "Value" "47uH" (at 85.725 152.4 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "footprint:IND-SMD_L4.0-W4.0_SLS3DXX" (at 85.725 165.1 0)
