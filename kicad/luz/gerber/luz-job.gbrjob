@@ -5,7 +5,7 @@
       "Application": "Pcbnew",
       "Version": "7.0.1-0"
     },
-    "CreationDate": "2023-11-13T20:43:58+01:00"
+    "CreationDate": "2023-11-20T21:41:35+01:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
@@ -14,11 +14,11 @@
       "Revision": "rev?"
     },
     "Size": {
-      "X": 54.2925,
-      "Y": 30.1
+      "X": 49.6025,
+      "Y": 22.0
     },
     "LayerNumber": 4,
-    "BoardThickness": 0.7912,
+    "BoardThickness": 1.5662,
     "Finish": "None"
   },
   "DesignRules": [
@@ -27,18 +27,18 @@
       "PadToPad": 0.2,
       "PadToTrack": 0.2,
       "TrackToTrack": 0.2,
-      "MinLineWidth": 0.1,
-      "TrackToRegion": 0.5,
-      "RegionToRegion": 0.5
+      "MinLineWidth": 0.2,
+      "TrackToRegion": 0.2,
+      "RegionToRegion": 0.2
     },
     {
       "Layers": "Inner",
-      "PadToPad": 0.0,
-      "PadToTrack": 0.0,
+      "PadToPad": 0.2,
+      "PadToTrack": 0.2,
       "TrackToTrack": 0.2,
       "MinLineWidth": 0.2,
-      "TrackToRegion": 0.5,
-      "RegionToRegion": 0.5
+      "TrackToRegion": 0.2,
+      "RegionToRegion": 0.2
     }
   ],
   "FilesAttributes": [
@@ -131,7 +131,7 @@
     },
     {
       "Type": "Dielectric",
-      "Thickness": 0.25,
+      "Thickness": 1.025,
       "Material": "FR4",
       "Name": "In1.Cu/In2.Cu",
       "Notes": "Type: dielectric layer 2 (from In1.Cu to In2.Cu)"

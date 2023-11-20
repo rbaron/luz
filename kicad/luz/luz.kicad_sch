@@ -2906,7 +2906,7 @@
   )
 
   (symbol (lib_id "B3U-1000P:B3U-1000P") (at 33.655 46.355 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom no) (on_board yes) (dnp yes) (fields_autoplaced)
     (uuid 021b944d-8004-4864-9115-7c66fbe461db)
     (property "Reference" "S2" (at 33.655 40.005 0)
       (effects (font (size 1.27 1.27)))
@@ -3407,7 +3407,7 @@
   )
 
   (symbol (lib_id "Jumper:Jumper_2_Bridged") (at 266.954 100.33 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid 20a1e5f7-9295-4db8-ad67-6171a56d2a97)
     (property "Reference" "JP2" (at 264.414 99.695 90)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -4442,7 +4442,7 @@
   )
 
   (symbol (lib_id "Jumper:Jumper_2_Bridged") (at 205.74 107.95 270) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7f33938f-4254-472a-b54c-b421057a18a4)
     (property "Reference" "JP1" (at 208.28 107.315 90)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -4706,7 +4706,7 @@
     (property "Reference" "U3" (at 226.06 17.78 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "~" (at 222.25 24.765 0)
+    (property "Value" "SI4909DY-VB" (at 222.25 24.765 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "footprint:SO-8_L4.9-W3.9-P1.27-LS5.9-BL" (at 222.25 24.765 0)
@@ -5139,7 +5139,7 @@
   )
 
   (symbol (lib_id "RF_Module:ESP32-WROOM-32D") (at 69.85 76.835 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid ba374424-6578-4549-b8d6-e7fe1db51d74)
     (property "Reference" "U5" (at 76.2 124.46 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -5543,7 +5543,7 @@
   )
 
   (symbol (lib_id "B3U-1000P:B3U-1000P") (at 94.615 43.18 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom no) (on_board yes) (dnp yes) (fields_autoplaced)
     (uuid d39786fe-6332-4224-a350-dfadceefa83b)
     (property "Reference" "S1" (at 94.615 37.465 0)
       (effects (font (size 1.27 1.27)))
@@ -5768,7 +5768,7 @@
   )
 
   (symbol (lib_id "Connector:Screw_Terminal_01x04") (at 168.275 81.28 90) (unit 1)
-    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom no) (on_board yes) (dnp yes) (fields_autoplaced)
     (uuid f0251a8a-2f9b-49ba-933a-87a4c1f97c98)
     (property "Reference" "J2" (at 169.545 75.565 90)
       (effects (font (size 1.27 1.27)))
