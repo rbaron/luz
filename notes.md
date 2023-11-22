@@ -298,6 +298,8 @@
               - 38.7.16 UCPD register map
           - [Reference design](https://www.st.com/resource/en/application_note/an5096-getting-started-with-stm32g0-series-hardware-development-stmicroelectronics.pdf)
           - [Explanation of USB pins](https://www.st.com/resource/en/product_training/STM32G0-Peripheral-USB-Type-C-Power-Delivery-UCPD.pdf)
+  - Zephyr + STM32
+    - [Zephyr USB-C Sink](https://docs.zephyrproject.org/latest/samples/subsys/usb_c/sink/README.html)
 
 # Docs
 - [PD & PPS by Infineon](https://www.infineon.com/dgdl/Infineon-Universal_USB-C_Charger_Designs_Enabled_by_Programmable_Power_Supply-Whitepaper-v01_00-EN.pdf?fileId=5546d4627aa5d4f5017af5d1d5131db9&da=t)
@@ -330,3 +332,27 @@
   - WIll use old ESP32 modules I have laying around
     - [Module ESP32­WROOM­32D](https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf)
     - [MCU datasheet](https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf)
+
+
+# Chargers
+## Small
+- [Anker 313 Charger (Ace, 45W)](https://ankertechnologycompanyltd.my.salesforce.com/sfc/p/#5g000004DkWQ/a/5g000000gl2x/FfrEZyfYeV9sbibH8bd240NGukjA4ueyrzGEvX6Izq0)
+  - $15 Black Friday
+  - No 12V fixed
+  - But does PPS 3.3V - 16V @ 3A
+- [Anker Nano II 45W](https://ankertechnologycompanyltd.my.salesforce.com/sfc/p/#5g000004DkWQ/a/5g000000gIGl/o1f7o_kwmjfOJY.g2D_vWGIs_UWesHygdUO1opcu_EE)
+  - $27
+  - No 12V fixed
+  - But does PPS 3.3V - 16V @ 3A
+- [Anker 511 Charger (Nano 3, 30W)](https://cdn.shopify.com/s/files/1/0595/4034/0926/files/A2147_User_Manual.pdf?v=1664433371)
+  - $20
+  - No 12V fixed
+  - But does PPS 3.3V - 16V @ 2A
+- [Anker PowerPort III Pod 65W](https://ru.anker.com/upload/iblock/ef9/y89gi14yuq3fje76wizdko6uvebsrp2o/A2712_PowerPort%20III%2065W%20Pod.pdf)
+  - The one I have
+  - No fixed 12V
+  - Seems to do PPS 3.3V - 21V @ 3A
+- [Anker Prime 100W (A2343)](https://ankertechnologycompanyltd.my.salesforce.com/sfc/p/#5g000004DkWQ/a/5g000000gtSj/dTjkYk9rz10PL6VbDI9kjnFpAX6eNBTsteTWvMzwyGw)
+  - The one I have
+  - Fixed 12V @ 3A
+  - No PPS listing, but says in the bottom that it does support PPS?
