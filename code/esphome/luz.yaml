@@ -1,0 +1,65 @@
+esphome:
+  name: luz
+  friendly_name: luz
+
+esp32:
+  board: esp32dev
+  framework:
+    type: arduino
+
+# Enable logging
+logger:
+  level: VERY_VERBOSE
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: "7/I21JvjieoojtJ4n/L9Ly0PeYR5zSPUJS7gmlv6TOI="
+
+ota:
+  password: "d7768030cdd0129072bfa1bd9ce753f1"
+
+wifi:
+  ssid: 35c
+  password: "Affsaifora35"
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Luz Fallback Hotspot"
+    password: "Hjun8GBeSGYn"
+
+captive_portal:
+
+i2c:
+  sda: GPIO21
+  scl: GPIO22
+  scan: True
+  id: i2c_bus
+
+ez_pd:
+  interrupt_pin: GPIO23
+
+light:
+  - platform: monochromatic
+    name: Luz Channel 1
+    id: luz_channel1
+    output: channel1
+  - platform: monochromatic
+    name: Luz Channel 2
+    id: luz_channel2
+    output: channel2
+  - platform: monochromatic
+    name: Luz Built-in LED
+    id: luz_built_in_led
+    output: built_in_led
+
+output:
+  - platform: ledc
+    id: built_in_led
+    pin: GPIO27
+  - platform: ledc
+    id: channel1
+    pin: GPIO18
+  - platform: ledc
+    id: channel2
+    pin: GPIO4

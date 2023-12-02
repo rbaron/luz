@@ -300,6 +300,9 @@
           - [Explanation of USB pins](https://www.st.com/resource/en/product_training/STM32G0-Peripheral-USB-Type-C-Power-Delivery-UCPD.pdf)
   - Zephyr + STM32
     - [Zephyr USB-C Sink](https://docs.zephyrproject.org/latest/samples/subsys/usb_c/sink/README.html)
+    - [nucleo_g071rb](https://github.com/zephyrproject-rtos/zephyr/tree/main/boards/arm/nucleo_g071rb)
+      - [.dts] does not enable ucpd1?
+      - but it's available at the SoC's [stm32g071.dtsi](https://github.com/zephyrproject-rtos/zephyr/blob/d34f725df81852b468dba2727a4d569022cb907d/dts/arm/st/g0/stm32g071.dtsi#L13)
 
 # Docs
 - [PD & PPS by Infineon](https://www.infineon.com/dgdl/Infineon-Universal_USB-C_Charger_Designs_Enabled_by_Programmable_Power_Supply-Whitepaper-v01_00-EN.pdf?fileId=5546d4627aa5d4f5017af5d1d5131db9&da=t)
@@ -356,3 +359,31 @@
   - The one I have
   - Fixed 12V @ 3A
   - No PPS listing, but says in the bottom that it does support PPS?
+
+
+# Dev Containers
+- [zmk](https://github.com/zmkfirmware/zmk)
+  - Uses their own [Docker image](https://github.com/zmkfirmware/zmk-docker/blob/3.2-branch/Dockerfile)
+
+
+# STM32 dev board
+- [nucleo_g071rb](https://www.st.com/en/evaluation-tools/nucleo-g071rb.html)
+  - [User manual](https://www.st.com/resource/en/user_manual/dm00452640-stm32-nucleo-64-boards-with-stm32g07xrb-mcus-stmicroelectronics.pdf)
+  - [Pinout](https://os.mbed.com/platforms/ST-Nucleo-G071RB/)
+  - [Zephyr board](https://docs.zephyrproject.org/latest/boards/arm/nucleo_g071rb/doc/index.html)
+    - `nucleo_g071rb`
+  - [How to build a simple USB-PD sink application](https://www.mouser.com/pdfDocs/enDM006635111.pdf)
+  - [Introduction to USB Type-C® Power Delivery for STM32](https://www.st.com/resource/en/application_note/dm00536349-usb-type-c-power-delivery-using-stm32xx-series-mcus-and-stm32xxx-series-mpus-stmicroelectronics.pdf)
+    - Great resource with overview of USB-C PD / PPS
+  - [Middleware USBPD Device G0](https://github.com/STMicroelectronics/stm32-mw-usbpd-device-g0)
+
+## Building
+```
+ZEPHYR_BASE=~/dev/zephyr/zephyr west build -b nucleo_g071rb
+```
+
+## Flashing
+With openocd:
+```
+openocd -f interface/stlink-v2.cfg  -f target/stm32g0x.cfg -c "program build/zephyr/zephyr.elf" -c "reset run" -c "shutdown"
+```
