@@ -387,3 +387,37 @@ With openocd:
 ```
 openocd -f interface/stlink-v2.cfg  -f target/stm32g0x.cfg -c "program build/zephyr/zephyr.elf" -c "reset run" -c "shutdown"
 ```
+
+## EZ - PD
+- [Comparison](https://www.rutronik.com/electronic-components/infineon/moving-to-usb-c-with-infineons-ez-pdtm-family)
+- BCR
+  - [datasheet](https://www.infineon.com/dgdl/Infineon-EZ-PD_BCR_Datasheet_USB_Type-C_Port_Controller_for_Power_Sinks-DataSheet-v03_00-EN.pdf?fileId=8ac78c8c7d0d8da4017d0ee7ce9d70ad)
+  - CYPD3177
+- BCR-Plus
+  - [datasheet](https://www.infineon.com/dgdl/Infineon-CYPD3176-24LQXQ-DataSheet-v01_00-EN.pdf?fileId=8ac78c8c81ae03fc0181d79a2e4b67e2)
+  - Offers PPS
+  - CYPD3176
+-
+- BCR-Lite
+
+### HPI
+- HPI for BCR-Plus and BCR-Lite
+  - [specification](https://www.infineon.com/dgdl/Infineon-EZ-PD_TM_BCR-PLUS_BCR-LITE_HOST_PROCESSOR_INTERFACE_SPECIFICATION_CYPD3176_CYPD3178-UserManual-v01_00-EN.pdf?fileId=8ac78c8c8afe5bd0018b1d4908804b9e)
+  - There's a PPS Request inside SINK_PDO_REQUEST
+- HPI for BCR
+  - [specification](https://www.infineon.com/dgdl/Infineon-EZ-PD_BCR_Host_Processor_Interface_Specification-Software-v01_00-EN.pdf?fileId=8ac78c8c7d0d8da4017d0f8c4313766b)
+
+
+## USB-C PD
+- Normal request
+  - Page 259
+- PPS request
+  - Table 6.26 page 160
+- PPS timers / keep alive
+  - Page 290
+  - Enough to keep requesting a PPS APDO as a keep alive every
+    - tPPSRequest
+      - Max 10s. We can do 5s
+  - Page 491 has "steps for SPR PPS Keep Alive"
+- Examples of messages
+  - Changing PDOs, page 383

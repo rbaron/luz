@@ -9,7 +9,17 @@ esp32:
 
 # Enable logging
 logger:
-  level: VERY_VERBOSE
+  level: INFO
+  logs:
+    ledc.output: WARN
+    light: WARN
+    api: WARN
+    api.connection: WARN
+    logger: WARN
+    ota: WARN
+    wifi: WARN
+    i2c.arduino: WARN
+    app: WARN
 
 # Enable Home Assistant API
 api:
@@ -38,6 +48,8 @@ i2c:
 
 ez_pd:
   interrupt_pin: GPIO23
+  voltage: 9000 mV
+  current: 1000 mA
 
 light:
   - platform: monochromatic
