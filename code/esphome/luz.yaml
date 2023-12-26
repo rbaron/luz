@@ -7,6 +7,10 @@ esp32:
   framework:
     type: arduino
 
+external_components:
+  - source: github://rbaron/esphome@cypd3177
+    components: [cypd3177]
+
 # Enable logging
 logger:
   level: VERBOSE
@@ -24,19 +28,18 @@ logger:
 # Enable Home Assistant API
 api:
   encryption:
-    key: "7/I21JvjieoojtJ4n/L9Ly0PeYR5zSPUJS7gmlv6TOI="
+    key: !secret homeassistant_enc_key
 
 ota:
-  password: "d7768030cdd0129072bfa1bd9ce753f1"
+  password: !secret ota_password
 
 wifi:
-  ssid: 35c
-  password: "Affsaifora35"
+  ssid: !secret wifi_ssid
+  password: !secret wifi_pass
 
-  # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
     ssid: "Luz Fallback Hotspot"
-    password: "Hjun8GBeSGYn"
+    password: !secret fallback_ap_pass
 
 captive_portal:
 

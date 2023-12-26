@@ -20,5 +20,23 @@ The CYPD3177 is configured during runtime via I2C. I implemented the `cypd3177` 
 
 In this repo there are sample `yaml` files under [./code/esphome](./code/esphome) that uses the `cypd3177` as an external component.
 
+To configure a power delivery contract, set up the `cypd3177` component in ESPHome as for example:
+```yaml
+cypd3177:
+  interrupt_pin: GPIO23
+  voltage: 9000 mV
+  current: 1000 mA
+```
+
 ## USB-C Power Delivery Support & Maximum Power
 The CUYP3177 supports USB-C PD 3.0, but unfortunately does not support Programmable Power Supply (PPS) contracts. The board is a prototype for learning, designed to handle a maximum of only 3 A.
+
+USB-C PD 3.0 requires a few standard fixed power profiles, notably at 5 V, 9 V, 15 V and 20 V. Some USB-C PD sources may also support 12 V. Enabling logging for the `cypd3177` component in ESPHome will show the power profiles supported by the source. For example:
+
+```
+16:08:41.416 -> [I][cypd3177.pdo:059]: Fixed PDO: 5000 mV, 3000 mA
+16:08:41.416 -> [I][cypd3177.pdo:059]: Fixed PDO: 9000 mV, 3000 mA
+16:08:41.416 -> [I][cypd3177.pdo:059]: Fixed PDO: 12000 mV, 2000 mA
+16:08:41.416 -> [I][cypd3177.pdo:059]: Fixed PDO: 15000 mV, 2000 mA
+16:08:41.416 -> [I][cypd3177.pdo:059]: Fixed PDO: 20000 mV, 1500 mA
+```
