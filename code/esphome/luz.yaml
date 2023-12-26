@@ -9,7 +9,7 @@ esp32:
 
 # Enable logging
 logger:
-  level: INFO
+  level: VERBOSE
   logs:
     ledc.output: WARN
     light: WARN
@@ -46,7 +46,7 @@ i2c:
   scan: True
   id: i2c_bus
 
-ez_pd:
+cypd3177:
   interrupt_pin: GPIO23
   voltage: 9000 mV
   current: 1000 mA
