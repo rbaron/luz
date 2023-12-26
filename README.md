@@ -29,9 +29,9 @@ cypd3177:
 ```
 
 ## USB-C Power Delivery Support & Maximum Power
-The CUYP3177 supports USB-C PD 3.0, but unfortunately does not support Programmable Power Supply (PPS) contracts. The board is a prototype for learning, designed to handle a maximum of only 3 A.
+The CYPD3177 supports USB-C PD 3.0, but unfortunately does not support Programmable Power Supply (PPS) contracts. The board is a prototype, mostly for learning, designed to handle a maximum of only 3 A.
 
-USB-C PD 3.0 requires a few standard fixed power profiles, notably at 5 V, 9 V, 15 V and 20 V. Some USB-C PD sources may also support 12 V. Enabling logging for the `cypd3177` component in ESPHome will show the power profiles supported by the source. For example:
+USB-C PD 3.0 mandates support for a few standard fixed power profiles, namely providing 5 V, 9 V, 15 V and 20 V. Some USB-C PD sources may also support 12 V. Enabling logging for the `cypd3177` component in ESPHome will show the power profiles supported by the source. For example:
 
 ```
 16:08:41.416 -> [I][cypd3177.pdo:059]: Fixed PDO: 5000 mV, 3000 mA
@@ -39,4 +39,5 @@ USB-C PD 3.0 requires a few standard fixed power profiles, notably at 5 V, 9 V, 
 16:08:41.416 -> [I][cypd3177.pdo:059]: Fixed PDO: 12000 mV, 2000 mA
 16:08:41.416 -> [I][cypd3177.pdo:059]: Fixed PDO: 15000 mV, 2000 mA
 16:08:41.416 -> [I][cypd3177.pdo:059]: Fixed PDO: 20000 mV, 1500 mA
+16:08:41.416 -> [I][cypd3177.pdo:066]: Augmented SPR_PPS PDO: 3300 - 11000 mV, 3000 mA
 ```
