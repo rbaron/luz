@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/Users/rbaron/dev/electronics/luz/kicad/luz/luz.kicad_sch</source>
-    <date>2023 November 20, Monday 21:53:40</date>
+    <date>2023 December 26, Tuesday 15:27:15</date>
     <tool>Eeschema 7.0.1-0</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -491,6 +491,36 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>388361fd-7651-4ceb-9297-5bdb44e3e10b</tstamps>
     </comp>
+    <comp ref="R13">
+      <value>470</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="LCSC">C25117</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="LCSC" value="C25117"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="luz.kicad_sch"/>
+      <property name="ki_description" value="Resistor, small symbol"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>39901e50-4f36-4839-b637-713ce776a40f</tstamps>
+    </comp>
+    <comp ref="R14">
+      <value>470</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="LCSC">C25117</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="LCSC" value="C25117"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="luz.kicad_sch"/>
+      <property name="ki_description" value="Resistor, small symbol"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fe3f8cc6-561d-4d8e-9eaf-7cb80d992be3</tstamps>
+    </comp>
     <comp ref="R15">
       <value>1k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
@@ -520,51 +550,6 @@
       <property name="ki_keywords" value="R resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>cf4fda47-2c23-417a-98f1-04289eb9dc0c</tstamps>
-    </comp>
-    <comp ref="R17">
-      <value>10k</value>
-      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
-      <fields>
-        <field name="LCSC">C25744</field>
-      </fields>
-      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
-      <property name="LCSC" value="C25744"/>
-      <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="luz.kicad_sch"/>
-      <property name="ki_description" value="Resistor, small symbol"/>
-      <property name="ki_keywords" value="R resistor"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamps>4f6f6133-5de0-459f-8492-39274f684d77</tstamps>
-    </comp>
-    <comp ref="R18">
-      <value>10k</value>
-      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
-      <fields>
-        <field name="LCSC">C25744</field>
-      </fields>
-      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
-      <property name="LCSC" value="C25744"/>
-      <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="luz.kicad_sch"/>
-      <property name="ki_description" value="Resistor, small symbol"/>
-      <property name="ki_keywords" value="R resistor"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamps>5e0c5b37-69cc-409b-99f3-e7aa09edb346</tstamps>
-    </comp>
-    <comp ref="R19">
-      <value>10k</value>
-      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
-      <fields>
-        <field name="LCSC">C25744</field>
-      </fields>
-      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
-      <property name="LCSC" value="C25744"/>
-      <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="luz.kicad_sch"/>
-      <property name="ki_description" value="Resistor, small symbol"/>
-      <property name="ki_keywords" value="R resistor"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamps>6f9743e4-0837-4f8e-b3cb-2d881f681440</tstamps>
     </comp>
     <comp ref="R21">
       <value>10k</value>
@@ -720,22 +705,6 @@ SWITCH;TACTILE,TOP ACTUATED,TACTILE &amp; JOG SWITCHES W/O BOSS W/O GROUND | Omr
         <pin num="25" name="EPAD" type="unspecified"/>
       </pins>
     </libpart>
-    <libpart lib="Connector" part="Barrel_Jack">
-      <description>DC Barrel Jack</description>
-      <docs>~</docs>
-      <footprints>
-        <fp>BarrelJack*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">J</field>
-        <field name="Value">Barrel_Jack</field>
-        <field name="Datasheet">~</field>
-      </fields>
-      <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
-      </pins>
-    </libpart>
     <libpart lib="Connector" part="Screw_Terminal_01x04">
       <description>Generic screw terminal, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
       <docs>~</docs>
@@ -837,24 +806,6 @@ SWITCH;TACTILE,TOP ACTUATED,TACTILE &amp; JOG SWITCHES W/O BOSS W/O GROUND | Omr
       <pins>
         <pin num="1" name="" type="passive"/>
         <pin num="2" name="" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="Jumper" part="Jumper_2_Bridged">
-      <description>Jumper, 2-pole, closed/bridged</description>
-      <docs>~</docs>
-      <footprints>
-        <fp>Jumper*</fp>
-        <fp>TestPoint*2Pads*</fp>
-        <fp>TestPoint*Bridge*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">JP</field>
-        <field name="Value">Jumper_2_Bridged</field>
-        <field name="Datasheet">~</field>
-      </fields>
-      <pins>
-        <pin num="1" name="A" type="passive"/>
-        <pin num="2" name="B" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Mechanical" part="MountingHole">
@@ -1043,9 +994,6 @@ SWITCH;TACTILE,TOP ACTUATED,TACTILE &amp; JOG SWITCHES W/O BOSS W/O GROUND | Omr
     <library logical="Device">
       <uri>/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols//Device.kicad_sym</uri>
     </library>
-    <library logical="Jumper">
-      <uri>/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols//Jumper.kicad_sym</uri>
-    </library>
     <library logical="Mechanical">
       <uri>/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols//Mechanical.kicad_sym</uri>
     </library>
@@ -1080,7 +1028,6 @@ SWITCH;TACTILE,TOP ACTUATED,TACTILE &amp; JOG SWITCHES W/O BOSS W/O GROUND | Omr
       <node ref="L1" pin="2" pinfunction="2" pintype="unspecified"/>
       <node ref="R1" pin="1" pintype="passive"/>
       <node ref="R10" pin="2" pintype="passive"/>
-      <node ref="R17" pin="2" pintype="passive"/>
       <node ref="R21" pin="2" pintype="passive"/>
       <node ref="R5" pin="1" pintype="passive"/>
       <node ref="R6" pin="1" pintype="passive"/>
@@ -1092,9 +1039,11 @@ SWITCH;TACTILE,TOP ACTUATED,TACTILE &amp; JOG SWITCHES W/O BOSS W/O GROUND | Omr
     </net>
     <net code="2" name="C1">
       <node ref="Q4" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="R13" pin="1" pintype="passive"/>
     </net>
     <net code="3" name="C2">
       <node ref="Q1" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="R14" pin="2" pintype="passive"/>
     </net>
     <net code="4" name="CC1">
       <node ref="U1" pin="A5" pinfunction="CC" pintype="unspecified"/>
@@ -1122,8 +1071,6 @@ SWITCH;TACTILE,TOP ACTUATED,TACTILE &amp; JOG SWITCHES W/O BOSS W/O GROUND | Omr
       <node ref="Q4" pin="2" pinfunction="S" pintype="passive"/>
       <node ref="R12" pin="1" pintype="passive"/>
       <node ref="R16" pin="1" pintype="passive"/>
-      <node ref="R18" pin="1" pintype="passive"/>
-      <node ref="R19" pin="2" pintype="passive"/>
       <node ref="R22" pin="2" pintype="passive"/>
       <node ref="U1" pin="25" pinfunction="GND" pintype="unspecified"/>
       <node ref="U1" pin="26" pinfunction="GND" pintype="unspecified"/>
@@ -1132,6 +1079,7 @@ SWITCH;TACTILE,TOP ACTUATED,TACTILE &amp; JOG SWITCHES W/O BOSS W/O GROUND | Omr
       <node ref="U1" pin="B1" pinfunction="GND" pintype="unspecified"/>
       <node ref="U1" pin="B12" pinfunction="GND" pintype="unspecified"/>
       <node ref="U2" pin="19" pinfunction="GND" pintype="unspecified"/>
+      <node ref="U2" pin="2" pinfunction="VBUS_MAX" pintype="unspecified"/>
       <node ref="U2" pin="22" pinfunction="GND" pintype="unspecified"/>
       <node ref="U2" pin="25" pinfunction="EPAD" pintype="unspecified"/>
       <node ref="U2" pin="6" pinfunction="ISNK_FINE" pintype="unspecified"/>
@@ -1143,6 +1091,7 @@ SWITCH;TACTILE,TOP ACTUATED,TACTILE &amp; JOG SWITCHES W/O BOSS W/O GROUND | Omr
     </net>
     <net code="8" name="ICOA">
       <node ref="R21" pin="1" pintype="passive"/>
+      <node ref="R22" pin="1" pintype="passive"/>
       <node ref="U2" pin="5" pinfunction="ISNK_COARSE" pintype="unspecified"/>
     </net>
     <net code="9" name="Net-(D1-A)">
@@ -1173,38 +1122,37 @@ SWITCH;TACTILE,TOP ACTUATED,TACTILE &amp; JOG SWITCHES W/O BOSS W/O GROUND | Omr
     <net code="14" name="Net-(J2-Pin_3)">
       <node ref="Q1" pin="3" pinfunction="D" pintype="passive"/>
     </net>
-    <net code="15" name="Net-(JP1-A)">
-      <node ref="R18" pin="2" pintype="passive"/>
-      <node ref="R19" pin="1" pintype="passive"/>
-    </net>
-    <net code="16" name="Net-(JP2-A)">
-      <node ref="R22" pin="1" pintype="passive"/>
-    </net>
-    <net code="17" name="Net-(U2-FLIP)">
+    <net code="15" name="Net-(U2-FLIP)">
       <node ref="R1" pin="2" pintype="passive"/>
       <node ref="U2" pin="10" pinfunction="FLIP" pintype="unspecified"/>
     </net>
-    <net code="18" name="Net-(U2-VCCD)">
+    <net code="16" name="Net-(U2-VCCD)">
       <node ref="C7" pin="1" pintype="passive"/>
       <node ref="U2" pin="24" pinfunction="VCCD" pintype="unspecified"/>
     </net>
-    <net code="19" name="Net-(U4-BOOT)">
+    <net code="17" name="Net-(U4-BOOT)">
       <node ref="C8" pin="1" pintype="passive"/>
       <node ref="U4" pin="6" pinfunction="BOOT" pintype="passive"/>
     </net>
-    <net code="20" name="Net-(U4-FB)">
+    <net code="18" name="Net-(U4-FB)">
       <node ref="R10" pin="1" pintype="passive"/>
       <node ref="R16" pin="2" pintype="passive"/>
       <node ref="U4" pin="4" pinfunction="FB" pintype="input"/>
     </net>
-    <net code="21" name="Net-(U4-SW)">
+    <net code="19" name="Net-(U4-SW)">
       <node ref="C8" pin="2" pintype="passive"/>
       <node ref="L1" pin="1" pinfunction="1" pintype="unspecified"/>
       <node ref="U4" pin="2" pinfunction="SW" pintype="power_out"/>
     </net>
-    <net code="22" name="Net-(U5-EN)">
+    <net code="20" name="Net-(U5-EN)">
       <node ref="C1" pin="2" pintype="passive"/>
       <node ref="R6" pin="2" pintype="passive"/>
+    </net>
+    <net code="22" name="Net-(U5-IO4)">
+      <node ref="R14" pin="1" pintype="passive"/>
+    </net>
+    <net code="23" name="Net-(U5-IO18)">
+      <node ref="R13" pin="2" pintype="passive"/>
     </net>
     <net code="24" name="Net-(U5-IO27)">
       <node ref="R15" pin="1" pintype="passive"/>
@@ -1217,11 +1165,7 @@ SWITCH;TACTILE,TOP ACTUATED,TACTILE &amp; JOG SWITCHES W/O BOSS W/O GROUND | Omr
       <node ref="R8" pin="2" pintype="passive"/>
       <node ref="U2" pin="12" pinfunction="HPI_SDA" pintype="unspecified"/>
     </net>
-    <net code="29" name="VBMAX">
-      <node ref="R17" pin="1" pintype="passive"/>
-      <node ref="U2" pin="2" pinfunction="VBUS_MAX" pintype="unspecified"/>
-    </net>
-    <net code="30" name="VBUS">
+    <net code="29" name="VBUS">
       <node ref="C10" pin="1" pintype="passive"/>
       <node ref="C2" pin="2" pintype="passive"/>
       <node ref="R2" pin="2" pintype="passive"/>
@@ -1234,88 +1178,88 @@ SWITCH;TACTILE,TOP ACTUATED,TACTILE &amp; JOG SWITCHES W/O BOSS W/O GROUND | Omr
       <node ref="U3" pin="8" pinfunction="D1" pintype="bidirectional"/>
       <node ref="U4" pin="3" pinfunction="VIN" pintype="power_in"/>
     </net>
-    <net code="31" name="VBUS_EN">
+    <net code="30" name="VBUS_EN">
       <node ref="R3" pin="2" pintype="passive"/>
       <node ref="U2" pin="3" pinfunction="VBUS_FET_EN" pintype="unspecified"/>
     </net>
-    <net code="32" name="VDCOUT">
+    <net code="31" name="VDCOUT">
       <node ref="C11" pin="1" pintype="passive"/>
       <node ref="R11" pin="2" pintype="passive"/>
       <node ref="U2" pin="11" pinfunction="VDC_OUT" pintype="unspecified"/>
       <node ref="U3" pin="5" pinfunction="D2" pintype="input"/>
       <node ref="U3" pin="6" pinfunction="D2" pintype="input"/>
     </net>
-    <net code="33" name="VMon">
+    <net code="32" name="VMon">
       <node ref="R11" pin="1" pintype="passive"/>
       <node ref="R12" pin="2" pintype="passive"/>
     </net>
-    <net code="36" name="unconnected-(U1-D+-PadA6)">
+    <net code="35" name="unconnected-(U1-D+-PadA6)">
       <node ref="U1" pin="A6" pinfunction="D+" pintype="unspecified+no_connect"/>
     </net>
-    <net code="37" name="unconnected-(U1-D+-PadB6)">
+    <net code="36" name="unconnected-(U1-D+-PadB6)">
       <node ref="U1" pin="B6" pinfunction="D+" pintype="unspecified+no_connect"/>
     </net>
-    <net code="38" name="unconnected-(U1-D--PadA7)">
+    <net code="37" name="unconnected-(U1-D--PadA7)">
       <node ref="U1" pin="A7" pinfunction="D-" pintype="unspecified+no_connect"/>
     </net>
-    <net code="39" name="unconnected-(U1-D--PadB7)">
+    <net code="38" name="unconnected-(U1-D--PadB7)">
       <node ref="U1" pin="B7" pinfunction="D-" pintype="unspecified+no_connect"/>
     </net>
-    <net code="40" name="unconnected-(U1-RX1+-PadB11)">
+    <net code="39" name="unconnected-(U1-RX1+-PadB11)">
       <node ref="U1" pin="B11" pinfunction="RX1+" pintype="unspecified+no_connect"/>
     </net>
-    <net code="41" name="unconnected-(U1-RX1--PadB10)">
+    <net code="40" name="unconnected-(U1-RX1--PadB10)">
       <node ref="U1" pin="B10" pinfunction="RX1-" pintype="unspecified+no_connect"/>
     </net>
-    <net code="42" name="unconnected-(U1-RX2+-PadA11)">
+    <net code="41" name="unconnected-(U1-RX2+-PadA11)">
       <node ref="U1" pin="A11" pinfunction="RX2+" pintype="unspecified+no_connect"/>
     </net>
-    <net code="43" name="unconnected-(U1-RX2--PadA10)">
+    <net code="42" name="unconnected-(U1-RX2--PadA10)">
       <node ref="U1" pin="A10" pinfunction="RX2-" pintype="unspecified+no_connect"/>
     </net>
-    <net code="44" name="unconnected-(U1-SBU1-PadA8)">
+    <net code="43" name="unconnected-(U1-SBU1-PadA8)">
       <node ref="U1" pin="A8" pinfunction="SBU1" pintype="unspecified+no_connect"/>
     </net>
-    <net code="45" name="unconnected-(U1-SBU2-PadB8)">
+    <net code="44" name="unconnected-(U1-SBU2-PadB8)">
       <node ref="U1" pin="B8" pinfunction="SBU2" pintype="unspecified+no_connect"/>
     </net>
-    <net code="46" name="unconnected-(U1-TX1+-PadA2)">
+    <net code="45" name="unconnected-(U1-TX1+-PadA2)">
       <node ref="U1" pin="A2" pinfunction="TX1+" pintype="unspecified+no_connect"/>
     </net>
-    <net code="47" name="unconnected-(U1-TX1--PadA3)">
+    <net code="46" name="unconnected-(U1-TX1--PadA3)">
       <node ref="U1" pin="A3" pinfunction="TX1-" pintype="unspecified+no_connect"/>
     </net>
-    <net code="48" name="unconnected-(U1-TX2+-PadB2)">
+    <net code="47" name="unconnected-(U1-TX2+-PadB2)">
       <node ref="U1" pin="B2" pinfunction="TX2+" pintype="unspecified+no_connect"/>
     </net>
-    <net code="49" name="unconnected-(U1-TX2--PadB3)">
+    <net code="48" name="unconnected-(U1-TX2--PadB3)">
       <node ref="U1" pin="B3" pinfunction="TX2-" pintype="unspecified+no_connect"/>
     </net>
-    <net code="50" name="unconnected-(U1-Vconn-PadB5)">
+    <net code="49" name="unconnected-(U1-Vconn-PadB5)">
       <node ref="U1" pin="B5" pinfunction="Vconn" pintype="unspecified+no_connect"/>
     </net>
-    <net code="51" name="unconnected-(U2-CC2-Pad14)">
+    <net code="50" name="unconnected-(U2-CC2-Pad14)">
       <node ref="U2" pin="14" pinfunction="CC2" pintype="unspecified+no_connect"/>
     </net>
-    <net code="52" name="unconnected-(U2-D+-Pad17)">
+    <net code="51" name="unconnected-(U2-D+-Pad17)">
       <node ref="U2" pin="17" pinfunction="D+" pintype="unspecified+no_connect"/>
     </net>
-    <net code="53" name="unconnected-(U2-D--Pad16)">
+    <net code="52" name="unconnected-(U2-D--Pad16)">
       <node ref="U2" pin="16" pinfunction="D-" pintype="unspecified+no_connect"/>
     </net>
-    <net code="54" name="unconnected-(U2-DNU1-Pad20)">
+    <net code="53" name="unconnected-(U2-DNU1-Pad20)">
       <node ref="U2" pin="20" pinfunction="DNU1" pintype="unspecified+no_connect"/>
     </net>
-    <net code="55" name="unconnected-(U2-DNU2-Pad21)">
+    <net code="54" name="unconnected-(U2-DNU2-Pad21)">
       <node ref="U2" pin="21" pinfunction="DNU2" pintype="unspecified+no_connect"/>
     </net>
-    <net code="56" name="unconnected-(U2-GPIO_1-Pad8)">
+    <net code="55" name="unconnected-(U2-GPIO_1-Pad8)">
       <node ref="U2" pin="8" pinfunction="GPIO_1" pintype="unspecified+no_connect"/>
     </net>
-    <net code="57" name="unconnected-(U2-SAFE_PWR_EN-Pad4)">
+    <net code="56" name="unconnected-(U2-SAFE_PWR_EN-Pad4)">
       <node ref="U2" pin="4" pinfunction="SAFE_PWR_EN" pintype="unspecified+no_connect"/>
     </net>
-    <net code="58" name="unconnected-(U4-EN-Pad5)">
+    <net code="57" name="unconnected-(U4-EN-Pad5)">
       <node ref="U4" pin="5" pinfunction="EN" pintype="input+no_connect"/>
     </net>
   </nets>

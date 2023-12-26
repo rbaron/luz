@@ -5,13 +5,13 @@
       "Application": "Pcbnew",
       "Version": "7.0.1-0"
     },
-    "CreationDate": "2023-11-20T21:41:35+01:00"
+    "CreationDate": "2023-12-26T15:33:35+01:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "luz",
       "GUID": "6c757a2e-6b69-4636-9164-5f7063625858",
-      "Revision": "rev?"
+      "Revision": "0.0.3a"
     },
     "Size": {
       "X": 49.6025,
